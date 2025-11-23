@@ -51,7 +51,6 @@ class _HomePageState extends State<HomePage> {
               SizedBox(height: 15),
               Container(
                 height: 150,
-                color: Colors.green,
                 child: ListView.builder(
                   itemCount: categories.length,
                   scrollDirection: Axis.horizontal,
