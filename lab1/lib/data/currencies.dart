@@ -1,12 +1,14 @@
 class Currencies {
-  var name;
-  var iconPath;
-  var exchangeRate;
+  String name;
+  String shortName;
+  String iconPath;
+  double exchangeRate;
 
   Currencies({
     required this.name,
+    required this.shortName,
     required this.iconPath,
-    required this.exchangeRate
+    required this.exchangeRate,
   });
 
   static List<Currencies> getCurrencies() {
@@ -14,42 +16,47 @@ class Currencies {
 
     currencies.add(
       Currencies(
-        name: 'Svenska Krona', 
-        iconPath: 'icons/swe.svg', 
-        exchangeRate: 100
-      )
+        name: 'Svenska Krona',
+        shortName: 'SEK',
+        iconPath: 'icons/swe.svg',
+        exchangeRate: 100.00,
+      ),
     );
 
     currencies.add(
       Currencies(
-        name: 'USD', 
-        iconPath: 'icons/usa.svg', 
-        exchangeRate: 957.12
-      )  
+        name: 'Amerikanska Dollar',
+        shortName: 'USD',
+        iconPath: 'icons/usa.svg',
+        exchangeRate: 957.12,
+      ),
     );
 
     currencies.add(
       Currencies(
-        name: 'Dansk Krona', 
-        iconPath: 'icons/dkk.svg', 
-        exchangeRate: 147.63
-      )
+        name: 'Dansk Krona',
+        shortName: 'DKK',
+        iconPath: 'icons/dkk.svg',
+        exchangeRate: 147.63,
+      ),
     );
 
     currencies.add(
       Currencies(
-        name: 'Euro', 
-        iconPath: 'icons/euro.svg', 
-        exchangeRate: 1102.60
-      )
+        name: 'Euro',
+        shortName: 'EUR',
+        iconPath: 'icons/euro.svg',
+        exchangeRate: 1102.60,
+      ),
     );
 
     currencies.add(
       Currencies(
-        name: 'Norsk Krona', 
+        name: 'Norsk Krona',
+        shortName: 'NOK',
         iconPath: 'icons/nkk.svg',
-        exchangeRate: 93.49
-      )
+        exchangeRate: 93.49,
+      ),
     );
 
     return currencies;
